@@ -4,12 +4,9 @@ import sys
 
 
 input = sys.argv[1]
-print(type(input))
 
 try:
-    if str(input) in light_levels:
-        brightness = ligh_levels[input.lower()]
-    elif float(input) > 0.0 and float(input) <= 1.0:
+    if float(input) > 0.0 and float(input) <= 1.0:
         brightness = input
     else:
         raise Exception("wrong argument")
